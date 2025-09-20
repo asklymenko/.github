@@ -4,6 +4,7 @@ on:
 
 jobs:
   prs-conflict-Check:
+    if: false  # 👈 ensures this never runs, so no runner is started
     name: 'Check PRs status: conflicts and resolution'
     runs-on: ubuntu-latest
     permissions:
